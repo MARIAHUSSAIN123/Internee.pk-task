@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password - OTP</title>
+    <link rel="stylesheet" href="forget.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <img src="internee.pkpng logo with slogan.png" alt="Internee.pk Logo" class="logo">
+        <h2>Internee.pk</h2>
+        <p>VIRTUAL INTERNSHIP PLATFORM</p>
+
+        <p>Enter your email:</p>
+        <input type="email" id="email" placeholder="Enter your email" required>
+        
+        <button onclick="sendOTP()">Send OTP</button>
+    </div>
+
+    <script>
+        function sendOTP() {
+            let email = document.getElementById("email").value.trim();
+            if (email === "") {
+                alert("Please enter your email!");
+                return;
+            }
+            alert("OTP sent to " + email);
+        }
+    </script>
+
+</body>
+</html>
+
